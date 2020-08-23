@@ -1,0 +1,108 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sih.firebasesendnotif.Fragments.DamLocationPicker">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <!--android:onClick="goPlacePicker"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/citytv"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_city"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:paddingLeft="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="53dp"
+            android:layout_toEndOf="@+id/citytv"
+            android:padding="20dp"
+            android:textAlignment="center" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/tvDam"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/dam_hint"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:id="@+id/tvPlace"
+                android:layout_width="374dp"
+                android:layout_height="41dp" />
+
+            <Button
+                android:id="@+id/fplace"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mybutton"
+                android:text="@string/place_select"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/tvLat"
+            android:layout_width="match_parent"
+            android:hint="@string/lat"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvLong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/longi"
+            android:padding="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_loc"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>
+</FrameLayout>

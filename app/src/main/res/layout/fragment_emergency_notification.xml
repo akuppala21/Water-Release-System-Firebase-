@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="sih.firebasesendnotif.NavbarActivity"
+    >
+
+    <Button
+        android:id="@+id/post_tw"
+        android:layout_width="137dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/mybutton"
+        android:text="@string/post_to_twitter"
+        android:textColor="@color/white"
+        android:backgroundTint="#00cdd2"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/post_fb"
+        android:layout_width="137dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/mybutton"
+        android:text="@string/post_to_facebook"
+        android:textColor="@color/white"
+        android:backgroundTint="#0058d2"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:id="@+id/text1"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="@string/em_not"
+        android:inputType="textCapSentences"
+        android:text=""
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="114dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/push"
+        android:layout_width="137dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/push_message"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
